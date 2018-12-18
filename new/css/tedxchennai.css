@@ -1,0 +1,1534 @@
+/**************************************/
+/*   CSS for BODY, HTML tags on page  */
+/**************************************/
+
+body, html{
+	padding: 0;
+	margin: 0;
+
+	background-color: black;
+}
+
+@font-face{
+	font-family: "Zeyada";
+	src:
+		local('Zeyada'),
+		url('../fonts/zeyada.ttf')
+		format('truetype');
+}
+
+
+/**************************************/
+/*  CLASSES used throughout document  */
+/**************************************/
+
+/*----------------------------*/
+/*CSS for the get-ticket links*/
+/*----------------------------*/
+
+.ticket-btn{
+	display: inline-block;
+
+	padding: .5% 0%;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+
+	border: 2px solid black;
+
+	background-color: red;
+	background-image: linear-gradient(40deg, #e60000, #810000);
+	color: white;
+
+	transition: all 0.15s;
+}
+
+.ticket-btn:hover{
+	border: 2px solid #e60000;
+}
+
+.ticket-gold-btn{
+	display: inline-block;
+
+	padding: .5% 0%;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+
+	border: 2px solid black;
+
+	background-color: red;
+	background-image: linear-gradient(to right, #FFD700, #977316);
+	color: white;
+
+	transition: all 0.15s;
+}
+
+.ticket-gold-btn:hover{
+	border: 2px solid gold;
+}
+
+.ticket-silver-btn{
+	display: inline-block;
+
+	padding: .5% 0%;
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+
+	border: 2px solid black;
+
+	background-color: red;
+	background-image: linear-gradient(to right, #a7a7a7, #747474);
+	color: white;
+
+	transition: all 0.15s;
+}
+
+.ticket-silver-btn:hover{
+	border: 2px solid silver;
+}
+
+
+
+/*----------------------------*/
+/*CSS for the if-boxes headers*/
+/*----------------------------*/
+
+.if-box-head{
+	display: block;
+	width: 100%;
+
+	font-family: "Zeyada";
+	text-align: center;
+
+	background-color: transparent;
+	color: white;
+}
+
+.if-box{
+	display: block;
+	width: 100%;
+
+	font-family: "Zeyada";
+	text-align: center;
+
+	background-color: transparent;
+	color: white;
+}
+
+
+.if-imgbox{
+	display: inline-block;
+
+	vertical-align: middle;
+}
+
+.if-textbox{
+	display: inline-block;
+
+	margin: 0% 0% 0% 1%;
+	padding: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	.if-imgbox{
+		width: 30%;
+		margin-right: 3%;
+	}
+
+	.if-img{
+		width: 100%;
+	}
+}
+
+/*------------------------*/
+/*CSS for the Q/A elements*/
+/*------------------------*/
+
+.qa-text{
+	font-family: "Noto Sans", sans-serif;
+	font-size: 95%;
+
+	color: #AAA;
+}
+
+
+
+
+
+/**************************************/
+/*	  CSS for MENU on top of page     */
+/**************************************/
+
+#menu{
+	position: fixed;
+	width: 100%;
+	height: 10%;
+	z-index: 100;
+
+	margin: 0;
+	padding: 1% 0% 0.25% 0%;
+	top: 0;
+	left: 0;
+
+	background-color: rgba(0,0,0,0.75);
+	transition: all 0.2s;
+}
+
+#menu-logo{
+	width: 17%;
+
+	padding: 0% 0% 0% 9.5%;
+}
+
+.menu-ticket-btn{
+	width: 8%;
+
+	margin: 1% 0% 0% 46%;
+
+	border-radius: 20px;
+
+	vertical-align: top;
+}
+
+.menu-ticket-btn:hover{
+	padding: .55% .14%;
+	margin: .95% 0% 0% 45.93%;
+}
+
+.menu-social-link{
+	width: 3.7%;
+
+	margin: 1% 0% 0% 0%;
+	border-radius: 17px;
+
+	vertical-align: top;
+}
+
+.menu-social-link:hover{
+	padding: .55% .15%;
+	margin: .95% 0% 0% 0%;
+}
+
+.menu-social-img{
+	width: 40%;
+
+	vertical-align: middle;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	#menu{
+		padding: 2.5% 0% 1.5% 0%;
+
+		background-color: rgba(0,0,0,0.75);
+	}
+
+	#menu-logo{
+		width: 40%;
+
+		padding: 0% 0% 0% 4%;
+	}
+
+	.menu-ticket-btn{
+		width: 23%;
+
+		margin: 1.6% 0% 0% 24%;
+		padding: 1.5% 0%;
+
+		font-size: 190%;
+		border-radius: 40px;
+	}
+
+	.menu-ticket-btn:hover{
+		margin: 1.6% 0% 0% 24%;
+		padding: 1.5% 0%;
+	}
+
+	.menu-social-link{
+		display: none;
+	}
+
+}
+
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #1		  */
+/**************************************/
+/*
+#body-div-one:hover{
+	background-image: url(../images/wave-bg2.png);
+} */
+#body-div-one{
+	width: 100%;
+
+	margin: 9% 0% 0% 0%;
+	text-align: center;
+	background-color: transparent;
+	background-image: url(../images/wave-bg.png);
+
+	background-repeat:cover;
+	background-position:top;
+	background-attachment: fixed;
+}
+
+@media only screen and (max-width: 1000px) {
+	#body-div-one{
+		margin-top: 20%;
+		background-image: url(../images/wave-bg.png);
+		background-repeat:no-repeat;
+		background-position:top;
+		background-attachment: fixed;
+
+	}
+}
+@media only screen and (max-width: 1400px){
+
+}
+
+/*--------------------*/
+/*CSS for the if-boxes*/
+/*--------------------*/
+
+.if-box-div-one{
+	margin-top: 12%;
+}
+
+.if-text-bg{
+	font-size: 320%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.if-box-div-one{
+		margin-top: 15%;
+	}
+
+	.if-text-bg{
+		font-size: 400%;
+	}
+}
+
+/*--------------------*/
+/*CSS for the qa-boxes*/
+/*--------------------*/
+
+.qa-box{
+	display: inline-block;
+	width: 50%;
+
+	margin-top: 2.5%;
+	margin-left: 0.7%;
+	text-align: center;
+
+	background-color: transparent;
+}
+
+.qa-header{
+	width: 75%;
+
+	margin: 0% 30% 0% 30%;
+
+	text-align: left;
+	font-family: "Noto Sans", sans-serif;
+	font-size: 130%;
+
+	color: #EEE;
+}
+
+.qa-text-width{
+	width: 70%;
+
+	margin: 2% 30% 0% 30%;
+
+	text-align: left;
+}
+
+@media only screen and (max-width: 1000px) {
+	.qa-box{
+		display: block;
+		width: 100%;
+
+		margin-top: 6%;
+
+		text-align: center;
+	}
+
+	.qa-header{
+		width: 95%;
+		margin: 0% 0% 0% 2.5%;
+
+		text-align: center;
+		font-size: 130%;
+	}
+
+	.qa-text-width{
+		width: 90%;
+
+		margin: 4% 0% 0% 5%;
+
+		font-size: 100%;
+		text-align: center;
+	}
+
+}
+
+/*--------------------*/
+/*CSS for stats--boxes*/
+/*--------------------*/
+
+.stats-box{
+	/* display: inline-block; */
+	width: 45%;
+
+	margin: 4% 0% 0% 4%;
+
+	vertical-align: top;
+
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 1366px){
+	.stats-box{
+		width: 45%;
+
+		margin: 4% 0% 0% 35%;
+
+		vertical-align: top;
+
+		background-color: transparent;
+	}
+}
+
+.yt-box{
+	/* display: inline-block; */
+	width: 45%;
+
+	margin: 4% 0% 0% 10%;
+
+	vertical-align: top;
+
+	background-color: transparent;
+}
+
+.stats-elem{
+	display: inline;
+	width: 80%;
+
+	margin: 1.5% 0%;
+	margin-left: 2%;
+	margin-right: 2%;
+	padding: 1%;
+	border: 1px solid #373737;
+	border-radius: 30px;
+
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+
+
+	background-image: linear-gradient(40deg, #090909, rgba(11,11,11,0.2));
+	color: #AAA;
+	transition: all 2s;
+}
+
+.stats-elem:hover{
+	background-image: linear-gradient(40deg, #090909, rgba(130,0,0,0.5));
+}
+
+.stats-txt-red{
+	font-size: 100%;
+	color: #ff2b06;
+}
+
+.stats-space{
+	margin-right: 1%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.stats-box{
+		display: block;
+		width: 90%;
+
+		margin: 5% 0% 0% 5%;
+	}
+
+	.stats-elem{border:10%;
+		padding-top: 2%;
+	padding: 2.5%;Display: inline;
+		/* display: inline;
+		width: 80%;
+
+
+		border: 2px solid #373737;
+		border-radius: 180px; */
+	}
+
+	.stats-elem:hover{
+		/* background-image: linear-gradient(40deg, #090909, rgba(130,0,0,0.5)); */
+	}
+
+	.stats-txt-red{font-size: 350%;
+		/* font-size: 350%;
+		color: #DDD; */
+	}
+
+	.stats-space{font-size: 100%;
+		/* margin-right: 1%; */
+	}
+}
+
+/*-----------------------*/
+/*CSS for body-ticket-btn*/
+/*-----------------------*/
+
+.body-ticket-btn{
+	display: block;
+	width: 14%;
+
+	margin: 5.5% 0% 0% 43%;
+	padding: 1% 0%;
+	border-radius: 25px;
+}
+
+.body-ticket-btn:hover{
+	width: 14.4%;
+	margin: 5.5% 0% 0% 42.8%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.body-ticket-btn{
+		width: 30%;
+		margin: 7% 0% 0% 30%;
+		padding: 3% 0%;
+
+		font-size: 170%;
+		border-radius: 50px;
+	}
+
+}
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #2		  */
+/**************************************/
+
+#body-div-two{
+	display: block;
+	width: 100%;
+
+	margin: 10% 0% 0% 0%;
+
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+	#body-div-two{
+		margin-top: 20%;
+	}
+}
+
+/*--------------*/
+/*CSS for if-box*/
+/*--------------*/
+
+.if-imgbox-medium{
+	width: 5%;
+}
+
+.if-img-medium{
+	width: 100%;
+}
+
+.if-text-medium{
+	font-size: 150%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.if-imgbox-medium{
+		width: 15%;
+	}
+
+	.if-img-medium{
+		width: 120%;
+	}
+
+	.if-text-medium{
+		font-size: 250%;
+	}
+
+	.youtube{
+		margin-left: 10%;
+		height: 515px;
+	}
+}
+
+/*--------------------*/
+/*CSS for about--boxes*/
+/*--------------------*/
+
+.about-box{
+	float:left;
+	padding-top:0%;
+}
+
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #3		  */
+/**************************************/
+
+#body-div-three{
+	display: inline-block;
+	width: 100%;
+
+	margin: 2% 0% 0% 0%;
+
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+	#body-div-three{
+		margin-top: 15%;
+	}
+}
+
+.widescreen-image{
+	display: inline-block;
+	width: 100%;
+
+	margin-top: 1%;
+	padding-bottom: 0.5%;
+
+	background-image: url('../images/tedx-widescreen.png');
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.widescreen-txt{
+	display: block;
+	width: 60%;
+
+	margin: 9.5% 0% 0% 40%;
+
+	font-family: "Noto Sans", sans-serif;
+
+	color: white;
+	background-color: transparent;
+}
+
+.widescreen-txt-bg{
+	font-size: 300%;
+	font-weight: 700;
+}
+
+.widescreen-txt-sm{
+	font-size: 115%;
+	margin-top: 3%;
+}
+
+.widescreen-txt-stats{
+	font-size: 300%;
+	margin-top: 3%;
+}
+
+.widescreen-txt-micro{
+	font-size: 30%;
+	margin: 0% 4% 0% 1%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.widescreen-image{
+		display: block;
+		width: 100%;
+
+		margin-top: 3.5%;
+		padding-bottom: 3%;
+		padding-top: 1%;
+	}
+
+	.widescreen-txt{
+		width: 70%;
+		margin: 9.5% 0% 0% 30%;
+	}
+
+	.widescreen-txt-bg{
+		font-size: 350%;
+		text-align: center;
+	}
+
+	.widescreen-txt-sm{
+		font-size: 185%;
+		margin-top: 3%;
+		text-align: center;
+	}
+
+	.widescreen-txt-stats{
+		font-size: 300%;
+		margin-top: 3%;
+		text-align: center;
+	}
+
+	.widescreen-txt-micro{
+		font-size: 25%;
+		margin: 0% 4% 0% 1%;
+	}
+}
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #4		  */
+/**************************************/
+
+#body-div-four{
+	display: block;
+	width: 100%;
+
+	margin: 3.5% 0% 6.5% 0%;
+	text-align: center;
+
+	background-color: transparent;
+}
+
+@media only screen and (max-width: 1000px) {
+	#body-div-four{
+		margin-top: 20%;
+		margin-bottom: 22.5%;
+	}
+}
+
+.event-features{
+	display: inline-block;
+	width: 25.5%;
+
+	margin-top: 3%;
+	padding: 0% 0% 1% 0%;
+	vertical-align: top;
+}
+
+.event-features-icon{
+	display: inline-block;
+	width: 10%;
+
+	margin: 1% 1%;
+}
+
+.event-features-icon img{
+	width: 95%;
+	margin: 0% 2.5%;
+}
+
+.event-features-heading{
+	display: inline-block;
+	width: 80%;
+
+	margin-top: 2%;
+
+	font-family: "Noto Sans", sans-serif;
+	font-size: 115%;
+	text-align: left;
+	vertical-align: top;
+
+	color: white;
+}
+
+.event-features-txt{
+	display: inline-block;
+	width: 78%;
+
+	margin: 2% 0% 0% 12%;
+
+	font-family: "Noto Sans", sans-serif;
+	font-size: 90%;
+	text-align: left;
+
+	color: #777;
+}
+
+@media only screen and (max-width: 1000px) {
+	.event-features{
+		display: block;
+		width: 80%;
+
+		margin-top: 5%;
+		margin-left: 10%;
+		padding: 0% 0% 1% 0%;
+		vertical-align: top;
+	}
+
+	.event-features-icon{
+		display: inline-block;
+		width: 10%;
+
+		margin: 1% 3%;
+	}
+
+	.event-features-icon img{
+		width: 95%;
+		margin: 0% 2.5%;
+	}
+
+	.event-features-heading{
+		display: inline-block;
+		width: 75%;
+
+		margin-top: 2%;
+
+		font-size: 250%;
+
+		color: white;
+	}
+
+	.event-features-txt{
+		display: inline-block;
+		width: 74%;
+
+		margin: 2% 0% 0% 16%;
+
+		font-size: 130%;
+	}
+}
+
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #5		  */
+/**************************************/
+
+#body-div-five{
+	display: block;
+	width: 100%;
+
+	margin-bottom: 6.5%;
+
+	text-align: center;
+}
+
+.magic-box{
+	display: inline-block;
+	width: 18%;
+	margin: .25%;
+
+}
+
+.magic-box-canvas{
+	width: 100%;
+
+	font-family: "Noto Sans";
+
+	background-color: rgba(230,0,0,0);
+
+	transition: all .2s;
+}
+
+.magic-box-canvas:hover{
+	background-color: rgba(230,0,0,0.5);
+}
+.magic-box-canvas:hover .magic-box-canvas p{
+	color: #AAA;
+	padding-top: 8%;
+	padding-bottom: 12%;
+	color: transparent;
+}
+.magic-box-canvas:hover .magic-box-link a{
+	color: red;
+	background-color: white;
+	border: 2px solid white;
+}
+
+.magic-box-canvas p{
+	padding: 20% 0% 0% 5%;
+	margin: 0% 0% 48% 0%;
+
+	text-align: left;
+	font-size: 85%;
+	color: transparent;
+
+	transition: all 0.2s;
+}
+
+.magic-box-footer{
+	padding: 0% 0% 10% 10%;
+
+	text-align: left;
+	font-size: 140%;
+	color: white;
+
+	transition: all 0.2s;
+}
+
+.magic-box-link{
+	padding-bottom: 5%;
+}
+
+.magic-box-link a{
+	display: block;
+	width: 50%;
+
+	color: transparent;
+	font-weight: 500;
+	font-size: 90%;
+	margin: 0% 0% 0% 10%;
+	padding: 3% 0% 3% 0%;
+
+	border-radius: 20px;
+	border: 2px solid transparent;
+
+	background-color: transparent;
+	background-image: none;
+
+	transition: all 0.2s;
+}
+
+.magic-box-1{
+	background-image: url("../images/image.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.magic-box-2{
+	background-image: url("../images/tedx-adv.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.magic-box-3{
+	background-image: url("../images/tedx-workshops.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.magic-box-4{
+	background-image: url("../images/tedx-salons.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	#body-div-five{
+		display: block;
+		width: 100%;
+
+		margin-bottom: 24%;
+
+		text-align: center;
+	}
+
+	.magic-box{
+		display: inline-block;
+		width: 40%;
+		margin: 1%;
+
+	}
+
+	.magic-box-1{
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.magic-box-2{
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.magic-box-3{
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.magic-box-4{
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #6		  */
+/**************************************/
+
+#body-div-six{
+	display: block;
+	width: 100%;
+
+	margin-top: 6.5%;
+}
+
+/*----------------------------*/
+/* CSS for the Ticket-Elements*/
+/*----------------------------*/
+
+.ticket-categories{
+	display: block;
+	width: 100%;
+
+	margin-top: 3.5%;
+
+	text-align: center;
+}
+
+.ticket-category{
+	display: inline-block;
+	height: 200px;
+
+	margin: 0% .75%;
+
+	font-family: "Noto Sans", sans-serif;
+
+	color: white;
+	background-color: transparent;
+}
+
+.ticket-category a{
+	width: 31%;
+	height:11%;
+	border-radius: 20px;
+	padding: 1% 0%;
+}
+
+.category-btn-sm{
+	width: 29%;
+	font-size: 90%;
+	padding: 2% 0%;
+}
+
+.ticket-category-bg{
+	width: 33%;
+}
+
+.ticket-category-sm{
+	width: 24.5%;
+}
+
+.ticket-category-name{
+	display: inline-block;
+	width: 45%;
+
+	text-align: left;
+	font-size: 120%;
+	color: #BBB;
+}
+
+.ticket-category-price{
+	display: inline-block;
+	width: 20%;
+
+	font-size: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.ticket-categories{
+		display: block;
+		width: 100%;
+
+		margin-top: 9%;
+
+		text-align: center;
+	}
+
+	.ticket-category{
+		display: block;
+		height: 200px;
+
+		margin: 0% .75%;
+
+		font-family: "Noto Sans", sans-serif;
+		vertical-align: middle;
+
+		color: white;
+		background-color: transparent;
+	}
+
+	.ticket-category a{
+		width: 32%;
+
+		border-radius: 50px;
+		font-size: 155%;
+		padding: 3% 0%;
+	}
+
+	.category-btn-sm{
+		width: 32%;
+		font-size: 90%;
+		padding: 2% 0%;
+	}
+
+	.ticket-category-bg{
+		width: 85%;
+		margin-left: 7.5%;
+	}
+
+	.ticket-category-sm{
+		width: 85%;
+		margin-left: 7.5%;
+	}
+
+	.ticket-category-name{
+		display: inline-block;
+		width: 45%;
+
+		text-align: left;
+		font-size: 200%;
+		color: #BBB;
+	}
+
+	.ticket-category-price{
+		display: inline-block;
+		width: 20%;
+
+		font-size: 180%;
+	}
+}
+
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #7		  */
+/**************************************/
+
+#body-div-seven{
+	display: block;
+	width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+	#body-div-seven{
+		margin-top: 22%;
+	}
+}
+
+/*--------------------------*/
+/*CSS for the sponsors boxes*/
+/*--------------------------*/
+
+.sponsors-box{
+	display: block;
+	width: 100%;
+
+	margin: 3% 0% 0% 0%;
+	text-align: center
+}
+
+.sponsor{
+	display: inline-block;
+	width: 5.5%;
+	margin: 0% 3%;
+
+	vertical-align: middle;
+}
+
+.sponsor img{
+	width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+	.sponsors-box{
+		display: block;
+		width: 100%;
+
+		margin: 3% 0% 0% 0%;
+		text-align: center;
+	}
+
+	.sponsor{
+		/* display: inline-block; */
+		width: 14%;
+		/* margin: 8% 43%; */
+
+		/* vertical-align: middle; */
+	}
+
+	.sponsor img{
+		width: 100%;
+	}
+}
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #8		  */
+/**************************************/
+
+#body-div-eight{
+	display: block;
+	width: 100%;
+
+	margin-top: 8%;
+	text-align: center;
+}
+
+.subscribe-form{
+	display: block;
+	width: 100%;
+
+	margin-top: 3%;
+	text-align: center;
+}
+
+/*-----------------------------*/
+/*CSS for the subcribe-form box*/
+/*-----------------------------*/
+
+.subscribe-form p{
+	width: 40%;
+	margin: 0% 0% 2.5% 30%;
+}
+
+.subscribe-form input{
+	width: 30%;
+
+	font-family: "Noto Sans", sans-serif;
+	font-size: 90%;
+	font-weight: 700;
+	padding: .75%;
+
+	border: 2px solid #333;
+
+	color: white;
+	background-color: #333;
+}
+
+.subscribe-form button{
+	border: 2px solid #333;
+	width: 15%;
+	padding: .7% .7% .85% .7%;
+
+	font-family: "Noto Sans", sans-serif;
+	font-size: 80%;
+	font-weight: 700;
+	cursor: pointer;
+	vertical-align: top;
+
+	color: white;
+	background-color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+	#body-div-eight{
+		margin-top: 20%;
+	}
+
+	.subscribe-form{
+		margin-top: 8%;
+	}
+
+	.subscribe-form p{
+		width: 80%;
+		margin: 0% 0% 2.5% 10%;
+		font-size: 140%;
+	}
+
+	.subscribe-form input{
+		width: 50%;
+
+		font-family: "Noto Sans", sans-serif;
+		font-size: 200%;
+		font-weight: 700;
+		padding: 1.5%;
+
+		border: none;
+		border: 2px solid #333;
+
+		color: white;
+		background-color: #333;
+	}
+
+	.subscribe-form button{
+		border: 2px solid #333;
+		width: 25%;
+		padding: 1.6% .7% 1.8% .7%;
+
+		font-family: "Noto Sans", sans-serif;
+		font-size: 200%;
+	}
+}
+
+/*-------------------*/
+/*CSS for the faq box*/
+/*-------------------*/
+
+.faq-box{
+	display: block;
+	width: 75%;
+
+	margin: 5% 0% 5% 12.5%;
+	padding-bottom: 4%;
+	text-align: center;
+
+	background-color: #333;
+}
+
+.faq-box header{
+	display: block;
+	width: 80%;
+
+	margin: 0% 0% 5% 10%;
+	padding: 10% 0% 0% 0%;
+
+	font-family: "Noto Sans", sans-serif;
+	font-size: 170%;
+	text-align: left;
+	color: white;
+}
+
+.faq-sections{
+	display: inline-block;
+	width: 37%;
+
+	margin: 0% 3% 0% 3%;
+	padding-bottom: 3%;
+	text-align: center;
+	vertical-align: top;
+}
+
+.faq-sections:hover .dropdown{
+	color: #777;
+	height: 100px;
+	display: block;
+}
+.faq-sections:hover .drop-header{
+	color: white;
+}
+
+.faq-sections hr{
+	background-color: #444;
+	border: 1px solid #777;
+
+	margin: 0%;
+}
+
+.faq-sections header{
+	display: block;
+	width: 90%;
+
+	margin: 5% 0% 5% 2%;
+	padding: 0;
+
+	font-family: "Montserrat";
+	font-size: 100%;
+	text-align: left;
+
+	color: #777;
+	cursor: pointer;
+
+	transition: all 0.3s;
+}
+
+.dropdown{
+	display: none;
+	width: 95%;
+	height: 0px;
+
+	margin: 0% 0% 0% 2%;
+
+	font-family: "Montserrat", sans-serif;
+	font-size: 95%;
+	text-align: left;
+
+	color: transparent;
+
+	transition: height 0.3s, color 0.3s;
+}
+
+
+@media only screen and (max-width: 1000px) {
+	.faq-box{
+		display: block;
+		width: 90%;
+
+		margin: 20% 0% 5% 5%;
+		padding-bottom: 4%;
+		text-align: center;
+
+		background-color: #333;
+	}
+
+	.faq-box header{
+		display: block;
+		width: 80%;
+
+		margin: 0% 0% 5% 10%;
+		padding: 10% 0% 0% 0%;
+
+		font-family: "Noto Sans", sans-serif;
+		font-size: 230%;
+		text-align: center;
+		color: white;
+	}
+
+	.faq-sections{
+		display: block;
+		width: 82%;
+
+		margin: 0% 3% 0% 9%;
+		padding-bottom: 3%;
+		text-align: center;
+		vertical-align: top;
+	}
+
+	.faq-sections:hover .dropdown{
+		color: #777;
+		height: 100px;
+		display: block;
+	}
+	.faq-sections:hover .drop-header{
+		color: white;
+	}
+
+	.faq-sections hr{
+		background-color: #444;
+		border: 1px solid #777;
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	.faq-sections header{
+		display: block;
+		width: 90%;
+
+		margin: 5% 0% 5% 2%;
+		padding: 0;
+
+		font-family: "Montserrat";
+		font-size: 100%;
+		text-align: center;
+
+		color: #777;
+		cursor: pointer;
+
+		transition: all 0.3s;
+	}
+
+	.dropdown{
+		display: none;
+		width: 95%;
+		height: 0px;
+
+		margin: 0% 0% 0% 2%;
+
+		font-family: "Montserrat", sans-serif;
+		font-size: 95%;
+		text-align: left;
+
+		color: transparent;
+
+		transition: height 0.3s, color 0.3s;
+	}
+}
+
+
+
+/**************************************/
+/*	      CSS for BODY-DIV #9		  */
+/**************************************/
+
+#body-div-nine{
+	display: block;
+	width: 100%;
+
+	text-align: center;
+
+	margin-top: 3%;
+}
+
+.footer-tedx-logo{
+	display: inline-block;
+	/* margin-right: 17%; */
+	/* vertical-align: top; */
+	width: 60%;
+	margin: 2%;
+	vertical-align: top;
+}
+
+.footer-links{
+	display: inline-block;
+	width: 10%;
+
+	font-family: "Noto Sans", sans-serif;
+	vertical-align: top;
+	color: white;
+}
+
+.footer-links p{
+	display: block;
+	margin-bottom: 20%;
+
+	text-align: left;
+	font-size: 120%;
+}
+
+.footer-links a{
+	display: block;
+
+	margin-bottom: 10%;
+
+	text-align: left;
+	font-size: 90%;
+	text-decoration: none;
+	color: white;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+	#body-div-nine{
+		display: block;
+		width: 100%;
+
+		text-align: center;
+
+		margin-top: 15%;
+		margin-bottom: 10%;
+	}
+
+	.footer-tedx-logo{
+		display: block;
+		width: 60%;
+		margin-left: 20%;
+		vertical-align: top;
+	}
+
+	.footer-tedx-logo img{
+		width: 100%;
+	}
+
+	.footer-links{
+		display: inline-block;
+		width: 32%;
+
+		margin-left: 0%;
+
+		font-family: "Noto Sans", sans-serif;
+		vertical-align: top;
+		color: white;
+	}
+
+	.footer-links p{
+		display: block;
+		margin-bottom: 10%;
+
+		text-align: center;
+		font-size: 270%;
+		font-weight: 700;
+	}
+
+	.footer-links a{
+		display: block;
+
+		margin-bottom: 5%;
+
+		text-align:center;
+		font-size: 170%;
+		text-decoration: none;
+		color: white;
+	}
+
+}
