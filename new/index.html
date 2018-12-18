@@ -73,11 +73,18 @@
 
 		<div id="menu" >
 			<img src="images/tedx-logo.png" id="menu-logo">
-			<a href="https://www.townscript.com/widget/tedxchennai-323340" class="ticket-btn menu-ticket-btn">Get Tickets</a>
+			<a onclick="openNav()" class="ticket-btn menu-ticket-btn">Get Tickets</a>
 
 		</div>
 
-
+		<div id="mySidenav" class="sidenav">
+		  <h2><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a></h2>
+		  <h2><a href="#">TICKETS</a></h2>
+		  <h2><a href="#">SPEAKERS</a></h2>
+		  <h2><a href="#">PODCAST</a></h2>
+		  <p><a href="#">news</a></p>
+		  <p><a href="#">more</a></p>
+		</div>
 		<!-- ==================== -->
 		<!-- HTML for BODY DIV #1 -->
 		<!-- ==================== -->
@@ -722,6 +729,17 @@ function isEmail(email){ var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+(
 
 <script>
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.opacity = "1";
+  document.getElementById("menu").style.display = 'none';
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.opacity = "0";
+  document.getElementById("menu").style.display = 'block';
+}
 
 	</script>
 </html>
