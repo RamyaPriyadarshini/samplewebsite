@@ -13,14 +13,13 @@
 
 		<!--Import Google Icon Font-->
 	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	  <!--Import materialize.css-->
-	  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+		<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 
-	<meta charset="UTF-8">
-	<meta name="msapplication-navbutton-color" content="#b02915">
+̥	<meta name="msapplication-navbutton-color" content="#b02915">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#b02915">
 	<meta name="theme-color" content="#b02915">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#b02915">
@@ -82,8 +81,6 @@
 
 		<div id="menu" >
 			<img src="images/tedx-logo.png" id="menu-logo">
-			<a href="https://www.townscript.com/widget/tedxchennai-323340" class="ticket-btn menu-ticket-btn">Get Tickets</a>
-
 		</div>
 
 
@@ -96,10 +93,10 @@
 			<!-- HTML for the IF-BOX -->
 			<!------------------------->
 
-			<div class="if-box if-box-div-one animated slideInUp">
+			<div class="if-box if-box-div-one animated slideInDow">
 				<!-- If-Box Image -->
-				<div class="if-imgbox">
-					<img src="images/tedx-if.png" class="if-img">
+				<div class="if-imgbox pulse-div">
+					<a href = "#"><img src="images/tedx-if.png" class="if-img"></a>
 				</div>
 				<!-- If-Box Text -->
 				<div class="if-textbox">
@@ -108,47 +105,6 @@
 					</p>
 				</div>
 			</div>
-			<!-------------------------->
-			<!-- HTML for the Q/A box -->
-			<!-------------------------->
-
-			<div class="qa-box animated slideInUp">
-				<!-- Q-A Header -->
-				<p class="qa-header">Aren't most discoveries and inventions a by-product of the questions the inventor asked?</p>
-				<!-- Q-A Text -->
-				<p class="qa-text qa-text-width">
-					Extending their thoughts and questions &#8209; if we are going to solve the problems of tomorrow, we need to be asking the right questions and challenging conventional notions of today. We need to be curious to dive deeper into the possibilities and pitfalls of solutions to arrive at that one, new idea that could change everything.<br><br>
-					Our resolve at TEDxChennai is to question the status quo and leave no stone unturned in exploring the endless possibilities. We believe that the next big change will start with "What if?".
-				</p>
-			</div>
-
-			<!---------------------------->
-			<!-- HTML for the Stats box -->
-			<!---------------------------->
-
-			<div class="stats-box animated slideInUp">
-				<!-- 1st stats element -->
-				<div class="stats-elem">
-					<span class="stats-txt-red">1000+</span><span class="stats-space"></span>attendees
-				</div>
-				<!-- 2nd stats element -->
-				<div class="stats-elem">
-					<span class="stats-txt-red">15+</span><span class="stats-space"></span>speakers
-				</div>
-				<!-- 3rd stats element -->
-				<div class="stats-elem">
-					<span class="stats-txt-red">8+</span><span class="stats-space"></span>hours
-				</div>
-			</div>
-
-			<!-------------------------------->
-			<!-- CSS for Body-Ticket-Button -->
-			<!-------------------------------->
-
-			<a href="https://www.townscript.com/widget/tedxchennai-323340" class="ticket-btn body-ticket-btn animated slideInUp">Get Tickets</a>
-
-		</div>
-
 
 		<!-- ==================== -->
 		<!-- HTML for BODY DIV #2 -->
@@ -176,22 +132,14 @@
 			<!-- HTML for the Youtube-About box -->
 			<!------------------------------------>
 
-
-			<div class="youtube-box yt-box">
-				<iframe style="width:80%;float:left;" class="youtube" height="315" src="https://www.youtube.com/embed/CJfBxDRMoFU" frameborder="0" allowfullscreen></iframe>
+			<div class="section">
+				<div class="youtube-box">
+					<iframe class="youtube yt-box" height="315" src="https://www.youtube.com/embed/CJfBxDRMoFU" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
 
-			<!---------------------------->
-			<!-- HTML for the Stats box -->
-			<!---------------------------->
-			<div class="about-box qa-box animated slideInUp">
-				<!-- About Header -->
-				<p class="qa-header">About TEDxChennai</p>
-				<!-- About Text -->
-				<p class="qa-text qa-text-width">
-					We, at TEDxChennai, believe that the bedrock of a successful sustainable ecosystem is an ensemble of symbiotic relationships that work towards re-imagining the wheel rather than re-inventing it.<br><br>
-					With this underlying principle, we have embarked on a quest to provide a platform where ideas are not only shared but are born, by bringing the community together, challenging perspectives and powering conversations that truly matter.
-				</p>
+			<div class="byt">
+				<a class = "buy-tick" href="#body-div-six">Buy Your Tickets Here<span>→</span></a>
 			</div>
 
 		</div>
@@ -222,197 +170,28 @@
 			<!----------------------------------->
 			<!-- HTML for the widescreen image -->
 			<!----------------------------------->
-
-			<div class="widescreen-image">
-				<p class="widescreen-txt widescreen-txt-bg">10 March 2019</p>
-				<p class="widescreen-txt widescreen-txt-sm">Sir Mutha Venkatasubba Rao Concert Hall,<br><b><a href="https://goo.gl/maps/m9ofkhxf71U2" style="color:#fff;"><i class="fa fa-map-marker" aria-hidden="true"></i> Open in Maps</a></b></p>
-				<p class="widescreen-txt widescreen-txt-stats">
-					1,000<span class="widescreen-txt-micro">attendees</span>
-					15+<span class="widescreen-txt-micro">speakers</span>
-					8<span class="widescreen-txt-micro">fun hours</span>
-				</p>
-				<p class="widescreen-txt widescreen-txt-bg" style="font-weight: 500;">Asia&apos;s 2nd largest TEDx Event in Chennai.</span>
+			<div class="section container">
+				<div class="carousel">
+			    <a class="carousel-item" href="#one!"><img src="images/Network_X.jpg"></a>
+			    <a class="carousel-item" href="#two!"><img src="images/Network_X.jpg"></a>
+			  </div>
 			</div>
 
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('.carousel.carousel-slider').carousel();
+	      });
+			</script>
+
+			<div class="byt">
+				<a class = "buy-tick" href="#body-div-six">Buy Your Tickets Here<span>→</span></a>
+			</div>
 		</div>
 
 
 
 		<!-- ==================== -->
 		<!-- HTML for BODY DIV #4 -->
-		<!-- ==================== -->
-
-		<div id="body-div-four">
-
-			<!-------------------------------->
-			<!-- HTML for 1st Event Feature -->
-			<!-------------------------------->
-
-			<div class="event-features">
-				<div class="event-features-icon">
-					<img src="images/icons/network.png">
-				</div>
-				<div class="event-features-heading">
-					Networking Opportunities
-				</div>
-				<div class="event-features-txt">
-					Connect with fellow entrepreneus and organizations to sow seeds that reap a mutual harvest.
-				</div>
-			</div>
-
-			<!-------------------------------->
-			<!-- HTML for 2nd Event Feature -->
-			<!-------------------------------->
-
-			<div class="event-features">
-				<div class="event-features-icon">
-					<img src="images/icons/mic.png">
-				</div>
-				<div class="event-features-heading">
-					Speaker Lounge
-				</div>
-				<div class="event-features-txt">
-					Get an opportunity to interact with the speakers in our Speaker Lounge.
-				</div>
-			</div>
-
-			<!-------------------------------->
-			<!-- HTML for 3rd Event Feature -->
-			<!-------------------------------->
-
-			<div class="event-features">
-				<div class="event-features-icon">
-					<img src="images/icons/dance.png">
-				</div>
-				<div class="event-features-heading">
-					Performances
-				</div>
-				<div class="event-features-txt">
-					Experience world-class performances by artists right here at TEDxChennai.
-				</div>
-			</div>
-
-			<!-------------------------------->
-			<!-- HTML for 4th Event Feature -->
-			<!-------------------------------->
-
-			<div class="event-features">
-				<div class="event-features-icon">
-					<img src="images/icons/xp.png">
-				</div>
-				<div class="event-features-heading">
-					Experience Zone
-				</div>
-				<div class="event-features-txt">
-					Get hands on with the creative ideas given birth to by our speakers at our Experience Zone.
-				</div>
-			</div>
-
-			<!-------------------------------->
-			<!-- HTML for 5th Event Feature -->
-			<!-------------------------------->
-
-			<div class="event-features">
-				<div class="event-features-icon">
-					<img src="images/icons/gift.png">
-				</div>
-				<div class="event-features-heading">
-					TedXChennai Gift Bags
-				</div>
-				<div class="event-features-txt">
-					Take home a specially curated Gift Bag, with goodies that would serve as a physical memory of the ideas shared.
-				</div>
-			</div>
-
-			<!-------------------------------->
-			<!-- HTML for 6th Event Feature -->
-			<!-------------------------------->
-
-			<div class="event-features">
-				<div class="event-features-icon">
-					<img src="images/icons/drinks.png">
-				</div>
-				<div class="event-features-heading">
-					Gala Night
-				</div>
-				<div class="event-features-txt">
-					Dress-up for our Gala Night and indulge over conversations and ideas over food, drinks and more.
-				</div>
-			</div>
-
-		</div>
-
-
-
-		<!-- ==================== -->
-		<!-- HTML for BODY DIV #5 -->
-		<!-- ==================== -->
-
-		<div id="body-div-five">
-
-			<!-------------------------->
-			<!-- HTML for Magic Box 1 -->
-			<!-------------------------->
-̥
-			<div class="magic-box magic-box-1">
-				<div class="magic-box-canvas">
-					<p>Connect with fellow entrepreneus and organizations to sow seeds that reap a mutual harvest.</p>
-					<footer class="magic-box-footer">Campus Ambassador</footer>
-					<footer class="magic-box-link">
-						<a href="#" class="ticket-btn">Get Tickets</a>
-					</footer>
-				</div>
-			</div>
-
-			<!-------------------------->
-			<!-- HTML for Magic Box 2 -->
-			<!-------------------------->
-
-			<div class="magic-box magic-box-2">
-				<div class="magic-box-canvas">
-					<p>Connect with fellow entrepreneus and organizations to sow seeds that reap a mutual harvest.</p>
-					<footer class="magic-box-footer">Adventure</footer>
-					<footer class="magic-box-link">
-						<a href="#" class="ticket-btn">Get Tickets</a>
-					</footer>
-				</div>
-			</div>
-
-			<!-------------------------->
-			<!-- HTML for Magic Box 3 -->
-			<!-------------------------->
-
-			<div class="magic-box magic-box-3">
-				<div class="magic-box-canvas">
-					<p>Connect with fellow entrepreneus and organizations to sow seeds that reap a mutual harvest.</p>
-					<footer class="magic-box-footer">Workshops</footer>
-					<footer class="magic-box-link">
-						<a href="#" class="ticket-btn">Get Tickets</a>
-					</footer>
-				</div>
-			</div>
-
-			<!-------------------------->
-			<!-- HTML for Magic Box 4 -->
-			<!-------------------------->
-
-			<div class="magic-box magic-box-4">
-				<div class="magic-box-canvas">
-					<p>Connect with fellow entrepreneus and organizations to sow seeds that reap a mutual harvest.</p>
-					<footer class="magic-box-footer">Salons</footer>
-					<footer class="magic-box-link">
-						<a href="#" class="ticket-btn">Get Tickets</a>
-					</footer>
-				</div>
-			</div>
-
-		</div>
-
-
-
-
-		<!-- ==================== -->
-		<!-- HTML for BODY DIV #6 -->
 		<!-- ==================== -->
 
 		<div id="body-div-six">
@@ -487,7 +266,7 @@
 
 
 		<!-- ==================== -->
-		<!-- HTML for BODY DIV #7 -->
+		<!-- HTML for BODY DIV #5 -->
 		<!-- ==================== -->
 		<div id="body-div-seven">
 			<!------------------------->
@@ -553,7 +332,7 @@
 			<form class="subscribe-form">
 				<p class="qa-text">We drop in emails every fortnight on strictly useful contents curated by
 our team. You can opt out anytime incase if you don&apos;t find it useful.</p>
-				<input type="text" placeholder="name@companyname.com"><button type="submit">Submit</button>
+				<input type="text" placeholder="name@companyname.com" style="width:80%" ><button type="submit">Submit</button>
 			</form>
 			<!-- Load Facebook SDK for JavaScript -->
 
@@ -692,8 +471,6 @@ our team. You can opt out anytime incase if you don&apos;t find it useful.</p>
 		  page_id="157059841633">
 		</div> -->
 
-
-		<script type="text/javascript" src="js/materialize.min.js"></script>
 		<style> #fb_widget .label{position:relative;float:left;color:#005f46;min-width:20%} #fb_widget .field{position:relative;float:left} #fb_widget .element{border:0 dotted red;margin:12px;padding:5px;min-height:25px;clear:both} #fb_widget .field input{margin:0;padding:0} #fb_link.disabled{opacity:0;visibility:hidden;}#fb_link.disabled .tooltiptext{font-size:0} #fb_link.disabled .tooltiptext:after{content:"OFFLINE";font-size:12px} #fb_link.email_us .tooltiptext{font-size:0} #img_email{display:none;} #fb_link.email_us .tooltiptext:after{content:"EMAIL US";font-size:12px} .fbmessenger{position:fixed;bottom:15px;right:15px;z-index:999999999} .fbmessenger span{z-index:999999999;position: absolute;} .fbmessenger.wpostop_left{left:2px;right:initial;top:0;bottom:initial} .tooltiptext.wpostop_left{left:60px;right:initial;top:8px;bottom:initial} .fbmessenger.wpostop_right{left:initial;right:15px;top:0;bottom:initial} .tooltiptext.wpostop_right{left:initial;right:60px;top:8px;bottom:initial} .fbmessenger.wposbottom_left{left:2px;right:initial;top:initial;bottom:0} .tooltiptext.wposbottom_left{left:60px;right:initial;top:initial;bottom:10px} .fbmessenger.wposbottom_right{left:initial;right:15px;top:initial;bottom:0} .tooltiptext.wposbottom_right{left:initial;right:60px;top:initial;bottom:10px} .fbmessenger img{width:50px;filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3));-webkit-filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3))} .tooltiptext{width:120px;background-color:#fff;color:#2c2c2c;text-align:center;padding:5px 0;border:1px solid #eee;border-radius:6px;position:fixed;bottom:30px;right:75px;font-family:'sans-serif';src:local('Zeyada'),url('fonts/zeyada.ttf')format('truetype');font-size:inherit;text-transform:uppercase;filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3));-webkit-filter:drop-shadow(2px 6px 4px rgba(0,0,0,.3))}
 </style>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
