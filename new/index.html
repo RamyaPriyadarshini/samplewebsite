@@ -81,9 +81,21 @@
 
 		<div id="menu" >
 			<img src="images/tedx-logo.png" id="menu-logo">
+
+
+			<a onclick="openNav()" class="ticket-btn menu-ticket-btn">Get Tickets</a>
+
+
 		</div>
 
-
+		<div id="mySidenav" class="sidenav">
+		  <h2><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close</a></h2>
+		  <h2><a href="#">TICKETS</a></h2>
+		  <h2><a href="#">SPEAKERS</a></h2>
+		  <h2><a href="#">PODCAST</a></h2>
+		  <p><a href="#">news</a></p>
+		  <p><a href="#">more</a></p>
+		</div>
 		<!-- ==================== -->
 		<!-- HTML for BODY DIV #1 -->
 		<!-- ==================== -->
@@ -507,5 +519,23 @@ function isEmail(email){ var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+(
 <div class='code'> <a id="fb_link" href="http://m.me/157059841633" target="_blank" class="" style="display: inline;"> <div class="fbmessenger wposbottom_right"><img id="img_msg" src="https://cdn.supple.com.au/wp-content/themes/supple/img/msg.png"><img id="img_email" src="https://cdn.supple.com.au/wp-content/themes/supple/img/emailc.png" style="display: none;"> <span class="tooltiptext wposbottom_right">Queries ?</span> </div> </a> </div>
 <!--Facebook Chat Widget - Made by Supple Solutions - https://supple.com.au/tools/facebook-messenger-website-chat-widget/ -->
 	</body>
+
+
+
+<script>
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+  document.getElementById("mySidenav").style.opacity = "1";
+  document.getElementById("menu").style.display = 'none';
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").style.opacity = "0";
+  document.getElementById("menu").style.display = 'block';
+}
+
+	</script>
 
 </html>
